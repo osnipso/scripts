@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ssh -f -N -L 19003:localhost:19003 irc

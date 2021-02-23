@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ps -fu osni|grep ssh|grep -v bash|grep -v grep|grep -v 'ssh-agent'|grep -v verify_irc_ssh_tunnel
