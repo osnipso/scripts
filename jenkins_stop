@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+curl -X POST -u osnipso:11814a3e8f33c2e6d64e0dcac807ca526d http://localhost:8080/exit

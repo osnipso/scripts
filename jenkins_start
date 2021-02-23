@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+docker run --rm -i \
+  -p 8080:8080 \
+  -v /home/`whoami`/.jenkins/jenkins_home:/var/jenkins_home \
+  -v /home/`whoami`/.jenkins/home:/home \
+  jenkinsci/blueocean:1.23.1
