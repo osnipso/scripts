@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+#sudo package-cleanup --oldkernels --count=2
+sudo dnf remove $(dnf repoquery --installonly --latest-limit=-2 -q)
