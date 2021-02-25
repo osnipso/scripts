@@ -1,0 +1,7 @@
+bundle_image=$1
+
+podman run --cidfile=containerid $bundle_image /bash 2>/dev/null
+container_id=$(<containerid);rm containerid
+podman cp $container_id:/manifests .
+podman rm $container_id
+
